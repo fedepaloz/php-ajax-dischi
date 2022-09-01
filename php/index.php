@@ -26,14 +26,14 @@ include __DIR__ . '/./discs.php';
 
     <div class="container-fluid">
         <div class="row">
-
+<?php foreach ($discs as $disc) : ?>
             <div class="col-2 text-white">
-                <img class='img-fluid' src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h2>titolo</h2>
-                <h3>autore</h3>
-                <h4>genere</h4>
+                <img class='img-fluid' src="<? echo($disc)['poster'] ?>" alt="">
+                <h2><? echo($disc)['title'] ?></h2>
+                <h3><? echo($disc)['author'] ?></h3>
+                <h4><? echo($disc)['year'] ?></h4>
             </div>
-
+<?php endforeach; ?>
         </div>
     </div>
 
