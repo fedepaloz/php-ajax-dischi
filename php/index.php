@@ -1,9 +1,6 @@
 <?php 
 include __DIR__ . '/./discs.php';
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
